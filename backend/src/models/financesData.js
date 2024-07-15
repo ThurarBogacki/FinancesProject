@@ -1,9 +1,9 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const financesDataSchema = new mongoose.Schema({
-    descricao: String,
-    recebidos: Number,
-    gastos: Number,
+  descricao: String,
+  recebidos: Number,
+  gastos: Number,
 });
 
-module.exports = mongoose.model('finances', financesDataSchema);
+module.exports = mongoose.model("finances", financesDataSchema);

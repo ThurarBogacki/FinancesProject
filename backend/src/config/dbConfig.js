@@ -1,10 +1,7 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-const dbConfig = 'mongodb+srv://user:user@cluster0.4o3x0wz.mongodb.net/?retryWrites=true&w=majority';
+const dbConfig = "mongodb://127.0.0.1:27017/arthur";
 
-const connection = mongoose.connect(dbConfig,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+const connection = mongoose.connect(dbConfig);
 
 module.exports = connection;
